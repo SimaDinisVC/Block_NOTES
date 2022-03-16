@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from functions import *
 from datauser import *
 from GUI import *
@@ -63,68 +62,3 @@ while True:
                     window['WRONG-UorP'].Update(visible=True)
 #####Login END#####
 #####Main Zone#####
-=======
-#####Functions#####
-def menu():
-    print('|Menu|\n1 - Creat a New Block!\n2 - Find a Block\n3 - See wow many pages you have\n4 - Exit and Log Out')
-    action_menu = int(input("- "))
-    while action_menu < 1 and action_menu > 4:
-        print('Please enter a number between 1 and 4.')
-        print('|Menu|\n1 - Creat a New Block!\n2 - Find a Block\n3 - See wow many pages you have\n4 - Exit and Log Out')
-        action_menu = int(input("- "))
-    return(action_menu)
-#####Functions END#####
-#####Inícial Menú#####
-print('Welcome to Block NOTES!\nBlock your NOTES!!!XD')
-print('Please log in with your account below!')
-#####Inícial Menú END#####
-#####Log In#####
-username = input('Username:\n- ')
-password = input('Password:\n- ')
-while username != 'SimaDinisVC' or password != 'simao78910':
-    print('Wrong Username or password!')
-    tasklogin = int(input('What do you want to do?\n1 - TRY AGAIN\n2 - Finish the programme\n- '))
-    if tasklogin == 1:
-        print('Please log in with your account below!')
-        username = input('Username:\n- ')
-        password = input('Password:\n- ')
-    elif tasklogin == 2:
-        finish = int(input('Are you sure you want to end this program?\n1 - YES\n2 - NO\n- '))
-        if finish == 1:
-            exit()
-        elif finish == 2:
-            print('Please log in with your account below!')
-            username = input('Username:\n- ')
-            password = input('Password:\n- ')
-        else:
-            print('Please enter a number between 1 and 2.')
-            print('So you try again.')
-            username = input('Username:\n- ')
-            password = input('Password:\n- ')
-    else:
-        print('Please enter a number between 1 and 2.')
-        print('So you try again.')
-        username = input('Username:\n- ')
-        password = input('Password:\n- ')
-#####Log In END#####
-#####Main Zone#####
-#####List of Block available#####
-contadorblock = 10
-while True:
-    action_menu = menu()
-    if action_menu == 1:
-        print()
-    elif action_menu == 2:
-        print()
-    elif action_menu == 3:
-        print('You have {} Blocks available.\nBy default there are 10 Blocks available in the normal plan.'.format(contadorblock))
-    elif action_menu == 4:
-        finish = int(input('Are you sure you want to end this program?\n1 - YES\n2 - NO\n- '))
-        if finish == 1:
-            print('OK,Log out READY!\nHave a nice life!')
-            exit()
-        elif finish == 2:
-            print('OK, Glad you stayed!')
-        else:
-            print('Please enter a number between 1 and 2.')
->>>>>>> parent of ba0486d (Upgrade 1)

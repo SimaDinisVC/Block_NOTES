@@ -21,7 +21,7 @@ def LogLayout(value):
         ],
         [sg.OK(), sg.Cancel()]
         ]
-        window = sg.Window("Put your Credential's", layout)
+        window = sg.Window("Put your Credential's", layout, icon="icone\icone.ico").Finalize()
 
     elif value == 2:
         layout = [
@@ -29,6 +29,6 @@ def LogLayout(value):
         [sg.Text('Now the program needs to be restarted.')],
         [sg.OK()]
         ]
-        window = sg.Window('Congratulations!!!', layout)
+        window = sg.Window('Congratulations!!!', layout, icon="icone\icone.ico").Finalize()
 
     return window
