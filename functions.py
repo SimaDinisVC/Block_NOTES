@@ -27,8 +27,8 @@ def addNEWusr(user,passw):
     fileread.close()
     filewrite = open('datauser.py', 'w')
     add = data.index("}")
-    if data == 'login = {}':
-        line = data[:add] + newuser + "}"
+    if 'login = {}' in data:
+        line = data[:add] + newuser + data[add:]
     else:
         line = data[:add] + ", " + newuser + data[add:]
     filewrite.write(line) 
