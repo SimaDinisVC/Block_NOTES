@@ -1,1 +1,1 @@
-login = {}
+login = {'mUHErUJUMbw':['MUHEI/()!=', 10, 0], 'mUHErUJUMbw':['MUHEI/()!=', 10, 0]}
